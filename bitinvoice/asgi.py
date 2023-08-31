@@ -1,5 +1,5 @@
 """
-ASGI config for invoicing project.
+ASGI config for bitinvoice project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
