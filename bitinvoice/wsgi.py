@@ -1,5 +1,5 @@
 """
-WSGI config for invoicing project.
+WSGI config for bitinvoice project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
