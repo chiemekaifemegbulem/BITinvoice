@@ -5,14 +5,14 @@ from django.conf import settings
 from django.conf import settings
 from django.conf.urls.static import static
 
-from invoice import views as invoice_views
+from bitinvoice_01 import views as invoice_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    #INVOICE URLS
+    #BITINVOICE URLS
     path('', invoice_views.index, name='index'),
-    path('invoice/',include('invoice.urls')),
+    path('bitinvoice_01/',include('bitinvoice_01.urls')),
 ]
 
 if settings.DEBUG:
