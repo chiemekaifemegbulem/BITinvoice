@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'invoice',
+    'bitinvoice_01',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +67,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'invoicing.urls'
+ROOT_URLCONF = ''
 
 TEMPLATES = [
     {
@@ -94,9 +94,9 @@ WSGI_APPLICATION = 'invoicing.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'invoice',
-        'USER': 'invoiceuser',
-        'PASSWORD': 'invoice_password',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -126,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Africa/Johannesburg'
+TIME_ZONE = 'Africa/Lagos'
 
 USE_I18N = True
 
