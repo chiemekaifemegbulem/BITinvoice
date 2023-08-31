@@ -5,7 +5,7 @@ from django.conf import settings
 
 def emailInvoiceClient(to_email, from_client, filepath):
     from_email = settings.EMAIL_HOST_USER
-    subject = '[BITincoice] Invoice Notification'
+    subject = '[BITinvoice] Invoice Notification'
     body = """
     Good day,
 
