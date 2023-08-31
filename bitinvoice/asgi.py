@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'invoicing.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bitinvoice.settings')
 
 application = get_asgi_application()
