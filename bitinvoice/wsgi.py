@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'invoicing.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bitinvoice.settings')
 
 application = get_wsgi_application()
