@@ -80,7 +80,8 @@ TestBaseModel class:
 No known bugs at this time. 
 
 ## Authors
-* Samuel Chiemeka - []
+* Samuel Chiemeka - [Github](https://github.com/chiemekaifemegbulem)
+
 * Bamigbopa Oluwafikayomi - [Github](https://github.com/faykey)
 * Felix Too - [Github](https://github.com/felixtoo48) 
 
