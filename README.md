@@ -80,10 +80,9 @@ TestBaseModel class:
 No known bugs at this time. 
 
 ## Authors
-Samuel Chiemeka - []
-Bamigbopa Oluwafikayomi - [Github](https://github.com/faykey)
-
-Felix Too - [Github](https://github.com/felixtoo48) 
+* Samuel Chiemeka - []
+* Bamigbopa Oluwafikayomi - [Github](https://github.com/faykey)
+* Felix Too - [Github](https://github.com/felixtoo48) 
 
 Second part of Airbnb: Joann Vuong
 ## License
