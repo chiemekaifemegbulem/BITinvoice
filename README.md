@@ -82,6 +82,7 @@ No known bugs at this time.
 ## Authors
 Samuel Chiemeka - []
 Bamigbopa Oluwafikayomi - [Github](https://github.com/faykey)
+
 Felix Too - [Github](https://github.com/felixtoo48) 
 
 Second part of Airbnb: Joann Vuong
@@ -90,7 +91,7 @@ Second part of Airbnb: Joann Vuong
 MIT License
 
 `Copyright (c) 2023 Chiemeka`
-  Ifemegbulem
+  `Ifemegbulem`
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
