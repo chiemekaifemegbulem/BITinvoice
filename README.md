@@ -22,6 +22,9 @@ The BITinvoice project is a user friendly web platform created to provide invoic
 This project is interpreted/tested on Ubuntu 20.04 LTS using Django (version 4.2.4)
 
 ## Installation
+* To get started, install python3 development tools on your virtual machine.
+* `sudo apt-get update`
+* `sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib`
 * Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
 * Access AirBnb directory: `cd AirBnB_clone`
 * Run hbnb(interactively): `./console` and enter command
