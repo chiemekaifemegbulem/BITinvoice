@@ -2,10 +2,12 @@
 The BITinvoice project is a user friendly web platform created to provide invoicing services for freelancers,startups and business owners.BITinvoice services allows users to create and send invoices digitally.
 
 #### Functionalities of the project:
+* Sign In and open dashboard
 * Create a new invoice
-* Update already created Invoice
-* Do operations like
-* Delete
+* Update, Delete and existing invoice
+* Search function
+* Clients and Products and Services view
+* Sending Invoice to client via email
 
 ## Table of Content
 * [Environment](#environment)
@@ -17,7 +19,7 @@ The BITinvoice project is a user friendly web platform created to provide invoic
 * [License](#license)
 
 ## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+This project is interpreted/tested on Ubuntu 20.04 LTS using Django (version 4.2.4)
 
 ## Installation
 * Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
@@ -68,13 +70,6 @@ TestBaseModelDocs class:
 * `def test_bm_module_docstring(self)` - Test for the base_model.py module docstring
 * `def test_bm_class_docstring(self)` - Test for the BaseModel class docstring
 * `def test_bm_func_docstrings(self)` - Test for the presence of docstrings in BaseModel methods
-
-TestBaseModel class:
-* `def test_is_base_model(self)` - Test that the instatiation of a BaseModel works
-* `def test_created_at_instantiation(self)` - Test created_at is a pub. instance attribute of type datetime
-* `def test_updated_at_instantiation(self)` - Test updated_at is a pub. instance attribute of type datetime
-* `def test_diff_datetime_objs(self)` - Test that two BaseModel instances have different datetime objects
-
 
 ## Bugs
 No known bugs at this time. 
