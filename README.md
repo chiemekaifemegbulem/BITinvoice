@@ -83,8 +83,28 @@ Classes in the model:
 * `def __init__(self, *args, **kwargs)` - Initializing base model
 #### `SettingsForm(forms.ModelForm)` - Company settings details input form
 #### `ClientSelectForm(forms.ModelForm)` - Client selection form
-* `def clean_client(self)' - client removal from the form
+* `def clean_client(self)` - client removal from the form
 
+[urls.py](bitinvoice_01/urls.py) - Contails urls for respective paths
+
+[views.py](bitinvoice_01/views.py) - Definition of the views rendered
+#### views - views rendered/requested
+* `def anonymous_required(function=None, redirect_url=None)` - Definition for checking if one is logged in or not to be able to access dashboard, and invoice
+* `def login(request)` - Log in request
+* `def dashboard(request)` - Dashboard request definition
+* `def index(request)` - landing page request definition
+* `def about(request)` - about page request definition
+* `def invoices(request)` - Invoice view  request definition
+* `def products(request)` - Product view request definition
+* `def clients(request)` - Client view request definition
+* `def logout(request)` - Logout request
+* `def createInvoice(request)` - Create invoice
+* `def createBuildInvoice(request, slug)` - Build invoice
+* `def viewPDFInvoice(request, slug)` - View Invoice in pdf
+* `def viewDocumentInvoice(request, slug)` - view document invoice
+* `def emailDocumentInvoice(request, slug)` - email invoice document
+* `def deleteInvoice(request, slug)` - Delete invoice request
+* `def companySettings(request)' - company settings view request
 
 ## Bugs
 No known bugs at this time. 
