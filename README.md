@@ -43,7 +43,7 @@ This project is interpreted/tested on Ubuntu 20.04 LTS using Django (version 4.2
 
 ## File Descriptions
 [models.py](bitinvoice_01/models.py) - This are the base models for my project, the entry point to the project.
-#### models - contains classes used for this project
+#### models - contains base classes used for this project
 Classes in the model:
 #### `Client` - This is the class containing the clients information
 * Basic Fields and Utility fields defined
@@ -72,6 +72,18 @@ Classes in the model:
 
 [functions.py](bitinvoice_01/functions.py) - Function definition for emailing invoice to the client
 * `def emailInvoiceClient(to_email, from_client, filepath)` - For emailing invoice function
+
+[forms.py](bitinvoice_01/forms.py) - Control form for information input from the front-end view
+#### forms - contains classes used for controlling form input
+#### `DateInput(forms.DateInput)` - Used to input date
+#### `UserLoginForm(forms.ModelForm)` - Class for user log in at the login page
+#### `ClientForm(forms.ModelForm)` - Class for client input form
+#### `ProductForm(forms.ModelForm)` - Class for product input form
+#### `InvoiceForm(forms.ModelForm)` - Invoice details input form
+* `def __init__(self, *args, **kwargs)` - Initializing base model
+#### `SettingsForm(forms.ModelForm)` - Company settings details input form
+#### `ClientSelectForm(forms.ModelForm)` - Client selection form
+* `def clean_client(self)' - client removal from the form
 
 
 ## Bugs
