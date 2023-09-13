@@ -44,10 +44,17 @@ This project is interpreted/tested on Ubuntu 20.04 LTS using Django (version 4.2
 ## File Descriptions
 [models.py](bitinvoice_01/models.py) - This are the base models for my project, the entry point to the project. 
 Classes in the model:
-* [Client]
-* [Invoice]
-* [Product]
-* [Settings]
+#### `Client` - This is the class containing the clients information
+* Basic Fields and Utility fields defined
+* `def __str__(self)` - String representation of the client name, provice and uniqueId
+* `def get_absolute_url(self)` - get url of client detail, slug
+* `def save(self, *args, **kwargs)` - Autosave function definition
+
+#### `Invoice` - This is the class containing the Invoice inormation
+
+#### `Product` - This is the class containing the products and services information
+
+#### `Settings` - This is the class containg the settings about the company
 
 
 #### `models/` directory contains classes used for this project:
