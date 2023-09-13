@@ -1,12 +1,11 @@
 # BITInvoice
-The .
+The BITinvoice project is a user friendly web platform created to provide invoicing services for freelancers,startups and business owners.BITinvoice services allows users to create and send invoices digitally.
 
 #### Functionalities of the project:
-* Create a new object (ex: a new User or a new Place)
-* Retrieve an object from a file, a database etc...
-* Do operations on objects (count, compute stats, etc...)
-* Update attributes of an object
-* Destroy an object
+* Create a new invoice
+* Update already created Invoice
+* Do operations like
+* Delete
 
 ## Table of Content
 * [Environment](#environment)
@@ -81,8 +80,9 @@ TestBaseModel class:
 No known bugs at this time. 
 
 ## Authors
+Samuel Chiemeka - []
+Bamigbopa Oluwafikayomi - []
 Felix Too - [Github](https://github.com/felixtoo48) 
-Nebiyou Yemam - 
 
 Second part of Airbnb: Joann Vuong
 ## License
