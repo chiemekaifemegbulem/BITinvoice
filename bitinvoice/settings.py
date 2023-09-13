@@ -24,10 +24,6 @@ MESSAGE_TAGS = {
 }
 
 
-
-
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -44,6 +40,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap5')
+CRISPY_TEMPLATE_PACK = ('bootstrap5')
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'bitinvoice_01',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -144,6 +145,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 CSS_LOCATION = os.path.join(BASE_DIR,'static')
 
+WKHTMLTOPDF_CMD = '/usr/local/bin/wkhtmltopdf'
 
 #Dynamic files and documents
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
@@ -151,6 +153,8 @@ MEDIA_URL = '/uploads/'
 
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
