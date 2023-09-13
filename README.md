@@ -25,10 +25,21 @@ This project is interpreted/tested on Ubuntu 20.04 LTS using Django (version 4.2
 * To get started, install python3 development tools on your virtual machine.
 * `sudo apt-get update`
 * `sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib`
-* Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
-* Access AirBnb directory: `cd AirBnB_clone`
-* Run hbnb(interactively): `./console` and enter command
-* Run hbnb(non-interactively): `echo "<command>" | ./console.py`
+* Setup postgre database: `sudo -u postgres psql` (Create database, create user and grant all priviledges, alter encoding and timezone role)
+* Install virtual environment and install django
+* `sudo -H pip3 install --upgrade pip` then `sudo -H pip3 install virtualenv`
+* Create directory and install django 
+* `mkdir project_portfolio && cd project_portfolio`
+* `virtualenv bitinvoiceenv`
+* `source bitinvoiceenv/bin/activate`
+* Install packages: `pip install django` and `pip install psycopg2`
+* Create a new django project called bitinvoice: `django-admin startproject bitinvoice`
+* `cd bitinvoice` and edit settings file with Database details
+* Run django app: `python manage.py makemigrations` then `python manage.py migrate`
+* Create a superuser: `python manage.py createsuperuser`
+* Collect static: `python manage.py collectstatic`
+* Run app: `python manage.py runserver 0.0.0.0:5000`
+* Start the app bitinvoice: `python manage.py startapp bitinvoice_01`
 
 ## File Descriptions
 [console.py](console.py) - the console contains the entry point of the command interpreter. 
