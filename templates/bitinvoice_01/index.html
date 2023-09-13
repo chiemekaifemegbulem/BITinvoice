@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="BITinvoice Invoicing System Create your own invoice online">
-    <meta name="author" content="BITinvoice">
-    <title>BITinvoice</title>
+    <meta name="description" content="BITInvoice Invoicing System Create your own invoice online">
+    <meta name="author" content="Invoicing Made Easy">
+    <title>BITInvoice</title>
 
     <link rel="canonical" href="">
 
@@ -43,8 +43,8 @@
   <body class="d-flex flex-column h-100">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="bootstrap" viewBox="0 0 118 94">
-        <title>Bootstrap</title>
+      <symbol id="BITinvoice" viewBox="0 0 118 94">
+        <title>BITInvoice</title>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
       </symbol>
       <symbol id="home" viewBox="0 0 16 16">
@@ -110,11 +110,8 @@
           </a>
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+	    <li id=""><a href="{% url 'about' %}" class="nav-link px-2 text-white">About</a></li>
           </ul>
 
 
@@ -133,16 +130,15 @@
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 class="display-4 fw-bold lh-1">Create an invoice online in minutes</h1>
-          <p class="lead">Are you looking for a FREE invoice builder online? get
-            started with creating your own invoice online with free invoice template
-            for your business.</p>
+          <p class="lead">Are you looking for an invoice builder online? get
+            started with creating your own invoice online with BITInvoice.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
             <a href="{% url 'login' %}"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Get Started</button></a>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+	    <a href="{% url 'about' %}"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button></a>
           </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img class="rounded-lg-3" src="{% static 'assets/img/bootstrap-docs.png' %}" alt="" width="720">
+            <img class="rounded-lg-3" src="{% static 'assets/img/logo1.png' %}" alt="" width="490">
         </div>
       </div>
     </div>
@@ -152,15 +148,14 @@
 
 <!-- The features start here  -->
 <div class="container px-4 py-5" id="featured-3">
-  <h2 class="pb-2 border-bottom">Skolo Online Free Online Invoice Generator</h2>
+  <h2 class="pb-2 border-bottom">BITInvoice Online Invoice Generator</h2>
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="feature col">
       <div class="feature-icon bg-primary bg-gradient">
         <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
       </div>
-      <h2>Free Forever</h2>
-      <p>No monthly fees, packages, credit card bills or expensive
-      accountants. Create invoices online for free, forever.</p>
+      <h2>Available Forever</h2>
+      <p>Create invoices online, forever.</p>
       <a href="#" class="icon-link">
         Start for free
         <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
@@ -171,7 +166,7 @@
         <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
       </div>
       <h2>Cloud Access</h2>
-      <p>Save your on the cloud for access from any device anywhere. Never lose client
+      <p>Save your info on the cloud for access from any device anywhere. Never lose client
       information again, simply log in to your account and access
       all historical invoices</p>
       <a href="#" class="icon-link">
@@ -196,15 +191,13 @@
 </div>
 <!-- The features end here -->
 
-
-
   </main>
 
 
 
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="">Created by Skolo Online for Educational Purposes.</span>
+      <span class="">BITInvoice for Business Purposes.</span>
     </div>
   </footer>
 
