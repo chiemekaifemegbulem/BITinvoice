@@ -42,7 +42,8 @@ This project is interpreted/tested on Ubuntu 20.04 LTS using Django (version 4.2
 * Start the app bitinvoice: `python manage.py startapp bitinvoice_01`
 
 ## File Descriptions
-[models.py](bitinvoice_01/models.py) - This are the base models for my project, the entry point to the project. 
+[models.py](bitinvoice_01/models.py) - This are the base models for my project, the entry point to the project.
+#### models - contains classes used for this project
 Classes in the model:
 #### `Client` - This is the class containing the clients information
 * Basic Fields and Utility fields defined
@@ -69,37 +70,9 @@ Classes in the model:
 * `def save(self, *args, **kwargs)` - Autosave function definition
 
 
-#### `models/` directory contains classes used for this project:
-[base_model.py](/models/base_model.py) - The BaseModel class from which future classes will be derived
-* `def __init__(self, *args, **kwargs)` - Initialization of the base model
-* `def __str__(self)` - String representation of the BaseModel class
-* `def save(self)` - Updates the attribute `updated_at` with the current datetime
-* `def to_dict(self)` - returns a dictionary containing all keys/values of the instance
+[functions.py](bitinvoice_01/functions.py) - Function definition for emailing invoice to the client
+* `def emailInvoiceClient(to_email, from_client, filepath)` - For emailing invoice function
 
-Classes inherited from Base Model:
-* [amenity.py](/models/amenity.py)
-* [city.py](/models/city.py)
-* [place.py](/models/place.py)
-* [review.py](/models/review.py)
-* [state.py](/models/state.py)
-* [user.py](/models/user.py)
-
-#### `/models/engine` directory contains File Storage class that handles JASON serialization and deserialization :
-[file_storage.py](/models/engine/file_storage.py) - serializes instances to a JSON file & deserializes back to instances
-* `def all(self)` - returns the dictionary __objects
-* `def new(self, obj)` - sets in __objects the obj with key <obj class name>.id
-* `def save(self)` - serializes __objects to the JSON file (path: __file_path)
-* ` def reload(self)` -  deserializes the JSON file to __objects
-
-#### `/tests` directory contains all unit test cases for this project:
-[/test_models/test_base_model.py](/tests/test_models/test_base_model.py) - Contains the TestBaseModel and TestBaseModelDocs classes
-TestBaseModelDocs class:
-* `def setUpClass(cls)`- Set up for the doc tests
-* `def test_pep8_conformance_base_model(self)` - Test that models/base_model.py conforms to PEP8
-* `def test_pep8_conformance_test_base_model(self)` - Test that tests/test_models/test_base_model.py conforms to PEP8
-* `def test_bm_module_docstring(self)` - Test for the base_model.py module docstring
-* `def test_bm_class_docstring(self)` - Test for the BaseModel class docstring
-* `def test_bm_func_docstrings(self)` - Test for the presence of docstrings in BaseModel methods
 
 ## Bugs
 No known bugs at this time. 
