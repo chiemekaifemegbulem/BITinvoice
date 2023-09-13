@@ -51,10 +51,22 @@ Classes in the model:
 * `def save(self, *args, **kwargs)` - Autosave function definition
 
 #### `Invoice` - This is the class containing the Invoice inormation
+* Basic fields, utility fields and related field(client foreign key)
+* `def __str__(self)` - String representation of the number and uniqueId
+* `def get_absolute_url(self)` - get url of slug
+* `def save(self, *args, **kwargs)` - Autosave function definition
 
 #### `Product` - This is the class containing the products and services information
+* Basic fields, utility fields and related field(client foreign key)
+* `def __str__(self)` - String representation of the product title and uniqueId
+* `def get_absolute_url(self)` - get url of slug
+* `def save(self, *args, **kwargs)` - Autosave function definition
 
 #### `Settings` - This is the class containg the settings about the company
+* Basic fields, utility fields
+* `def __str__(self)` - String representation of the client name, provice and uniqueId
+* `def get_absolute_url(self)` - get url of client detail, slug
+* `def save(self, *args, **kwargs)` - Autosave function definition
 
 
 #### `models/` directory contains classes used for this project:
