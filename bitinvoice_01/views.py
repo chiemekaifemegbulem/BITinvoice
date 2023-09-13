@@ -39,6 +39,11 @@ def index(request):
     return render(request, 'invoice/index.html', context)
 
 
+def about(request):
+    context = {}
+    return render(request, 'bitinvoice_01/about.html', context)
+
+
 @anonymous_required
 def login(request):
     context = {}
